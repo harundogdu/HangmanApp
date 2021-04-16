@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Asmaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HangmanApp</h1>
+    <p>Gizlenmiş Şehirleri Bulmak İçin Klavyeden Bir Harf Giriniz.</p>
+
+    <div class="container">
+        <svg width="250" height="250" class="grafik">
+            <!-- sehpa -->
+            <line x1="50" y1="0" x2="150" y2="0"></line>
+            <line x1="150" y1="0" x2="150" y2="40"></line>
+            <line x1="50" y1="0" x2="50" y2="250"></line>
+            <line x1="10" y1="250" x2="90" y2="250"></line>
+            <!-- sehpa end -->
+            <!-- kafa -->
+            <circle cx="150" cy="60" r="20" class="item"></circle>
+            <!-- kafa end -->
+            <!-- gövde -->
+            <line x1="150" y1="80" x2="150" y2="150" class="item"></line>
+            <!-- gövde end -->
+            <!-- kollar -->
+            <line x1="150" y1="100" x2="180" y2="120" class="item"></line>
+            <line x1="150" y1="100" x2="120" y2="120" class="item"></line>
+            <!-- kollar end -->
+            <!-- bacaklar -->
+            <line x1="150" y1="150" x2="180" y2="200" class="item"></line>
+            <line x1="150" y1="150" x2="120" y2="200" class="item"></line>
+            <!-- bacaklar end -->
+        </svg>
+        <!-- yanlış harfler -->
+        <div class="wrong-letters">
+            <p>Hatalı Harfler</p>
+            <span id="wrongHarfs"></span>
+        </div>
+        <!-- yanlış harfler end-->
+        <!-- harfler -->
+        <div id="word">
+        </div>
+        <!-- harfler end -->
+
+    </div>
+    <div id="popup-container">
+        <div id="popup">
+            <h2 id="success-message"></h2>
+            <button id="btnPlayAgain">Tekrar Oyna</button>
+        </div>
+    </div>
+    <!-- container end -->
+
+    <div id="message" class="">
+        <p>Bu harfi zaten eklediniz.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
