@@ -59,8 +59,10 @@ body {
     border-bottom: 2px solid #000;
     margin: 0 4px;
     font-size: 28px;
-    height: 40px;
+    height: 35px;
     width: 25px;
+    text-align: center;
+    background-color: #fff;
 }
 
 .item {
